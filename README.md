@@ -1,20 +1,18 @@
-# app
+# My CountrySide
 
-a [Sails v1](https://sailsjs.com) application
+a Sails v1 application
 
+### Descripción 
 
-### Links
+Esta aplicación tendrá como objetivo la administración del stock de campos agricolas. 
 
-+ [Sails framework documentation](https://sailsjs.com/get-started)
-+ [Version notes / upgrading](https://sailsjs.com/documentation/upgrading)
-+ [Deployment tips](https://sailsjs.com/documentation/concepts/deployment)
-+ [Community support options](https://sailsjs.com/support)
-+ [Professional / enterprise options](https://sailsjs.com/enterprise)
+### Integrantes 
 
+  Chiletti Emanuel 
 
 ### Version info
 
-This app was originally generated on Tue Jun 30 2020 18:43:18 GMT-0300 (GMT-03:00) using Sails v1.2.4.
+This app was originally generated on Tue Jun 16 2020 15:44:41 GMT-0300 (GMT-03:00) using Sails v1.2.4.
 
 <!-- Internally, Sails used [`sails-generate@1.17.2`](https://github.com/balderdashy/sails-generate/tree/v1.17.2/lib/core-generators/new). -->
 
