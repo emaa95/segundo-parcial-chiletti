@@ -20,8 +20,10 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/homepage' },
+  //Usuario
   'get /login': { view: 'pages/login' },
   'post /login': 'UsuarioController.login',
+   '/logout':    'UsuarioController.logout' ,
   /***************************************************************************
   *                                                                          *
   * More custom routes here...                                               *
