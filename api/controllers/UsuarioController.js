@@ -21,7 +21,12 @@ module.exports = {
             req.session.user = null;
             res.view('pages/login');
         }
-    }
+    },
 
+    logout: async function (req, res) {
+      req.session.user = null;
+      res.view('pages/homepage');
+
+  }
 };
 
