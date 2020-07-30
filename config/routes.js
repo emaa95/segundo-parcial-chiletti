@@ -24,6 +24,8 @@ module.exports.routes = {
   'get /login': { view: 'pages/login' },
   'post /login': 'UsuarioController.login',
    '/logout':    'UsuarioController.logout' ,
+  //Campos
+  'get /newCampos': { view: 'pages/newCampos' },
   /***************************************************************************
   *                                                                          *
   * More custom routes here...                                               *
