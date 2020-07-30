@@ -20,6 +20,15 @@
         <li class="nav-item active">
           <a class="nav-link" href="/">Inicio</a>
         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="far fa-user"></i> Campos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/logout">Ver campos</a>
+            <a class="dropdown-item" href="/newCampos"> Nuevo campo </a>
+          </div>
+        </li>
       </ul>
       <ul class="navbar-nav mr-1">
         <% if(! req.session.user) { %>
