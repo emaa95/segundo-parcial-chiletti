@@ -11,7 +11,7 @@ module.exports = {
         let pass = req.param('pass');
         let found = await Usuario.findOne({
             username: user,
-            password: pass
+            password: await sails.argon2.hash(pass),
         })
 
         if (found) {
