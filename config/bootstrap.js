@@ -16,15 +16,15 @@ module.exports.bootstrap = async function() {
   // For example:
   // ```
   // // Set up fake development data (or if we already have some, avast)
-  // if (await User.count() > 0) {
-  //   return;
-  // }
+  sails.argon2 = require("argon2");
+   if (await Usuario.count() > 0) {
+     return;
+   }
   //
-  // await User.createEach([
-  //   { emailAddress: 'ry@example.com', fullName: 'Ryan Dahl', },
-  //   { emailAddress: 'rachael@example.com', fullName: 'Rachael Shaw', },
+   await Usuario.createEach([
+     { username:"admin", password:sails.argon2.hash("admin"), email:"chilettiemanuel@gmail.com" },
   //   // etc.
-  // ]);
+   ]);
   // ```
 
 };
