@@ -1,0 +1,13 @@
+<div class="card-deck">
+    <% for (let campo of campos) { %>
+
+    <div class="card bg-success">
+        <div class="card-body text-center">
+            <p class="card-text"><%-campo.Nombre%></p>
+            <p class="card-text"><%-campo.CantHas%></p>
+            <p class="card-text"><%-campo.Localidad%></p>
+            <p class="card-text"><%-campo.Provincia%></p>
+        </div>
+    </div>
+</div>
+<%}%>
