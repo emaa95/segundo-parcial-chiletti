@@ -1,14 +1,24 @@
-body{
-  background-image: url('../images/fondo.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+body {
+  /*background-color: #1574e8;*/
 }
 
-
+#1{
+  background-image: url("assets/images/fondo1.png");
+}
 #width4{
 }
 
 #mapa{
+}
+
+.form-control{
+  height: 40px;
+  width: 300px;
+}
+
+#form-login{
+    background-position: left;
+    margin: 100px;
 }
 
 

@@ -6,7 +6,12 @@
  */
 
 module.exports = {
-  
+  home: async function (req, res) {
+  let campos = await Campo.find({});
+      res.view('pages/campos', {campos : campos });
+
+  }
+
 
 };
 
