@@ -12,10 +12,10 @@ module.exports = {
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-    Nombre: { type: 'string', required: true, },
-    CantHas: { type: 'number'},
-    Localidad: { type: 'string', required: true, },
-    Provincia: { type: 'string', required: true, },
+    nombre: { type: 'string', required: true, },
+    cantHas: { type: 'number'},
+    localidad: { type: 'string', required: true, },
+    provincia: { type: 'string', required: true, },
 
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗

@@ -8,4 +8,4 @@ username=ema&password=1234&email=ema.chiletti@gmail.com
 POST http://localhost:1337/Campo
 Content-Type: application/x-www-form-urlencoded
 
-Nombre=Campo Tcha&CantHas=200&Localidad=Tancacha&Provincia=Cordoba
+Nombre=Campo Tcha&CantHas=200&Localidad=Tancacha&Provincia=Cordoba&owner=6

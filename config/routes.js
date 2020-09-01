@@ -25,7 +25,8 @@ module.exports.routes = {
   'post /login': 'UsuarioController.login',
    '/logout':    'UsuarioController.logout' ,
   //Campos
-  'POST /newCampos': { view: 'pages/newCampos' },
+  'get /newCampos': {view: 'pages/newCampos'},
+  'post /newCampos': 'CampoController.nuevoCampo' ,
   '/Campos': 'CampoController.home',
   /***************************************************************************
   *                                                                          *

@@ -11,14 +11,13 @@
 
 module.exports.bootstrap = async function() {
 
-  sails.argon2 = require("argon2");
+  sails.argon2 = require('argon2');
   if (await Usuario.count() > 0) {
     return;
   }
   //
   await Usuario.createEach([
-    { username:"admin", password:sails.argon2.hash("admin"), email:"chilettiemanuel@gmail.com" },
-
+    { username: 'admin', password:await sails.argon2.hash('admin'), email:'chilettiemanuel@gmail.com'},
   ]);
 };
 
