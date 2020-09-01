@@ -12,10 +12,9 @@ module.exports = {
     let pass = req.param('pass');
     let found = await Usuario.findOne({
       username: user,
-      password: await sails.argon2.hash(pass),
     });
 
-    if (found) {
+    if (found && await sails.argon2.verify(found.password, pass)) {
       req.session.user = found;
       res.view('pages/login');
     } else {
