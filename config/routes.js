@@ -27,7 +27,15 @@ module.exports.routes = {
   //Campos
   'get /newCampos': {view: 'pages/newCampos'},
   'post /newCampos': 'CampoController.nuevoCampo' ,
-  '/Campos': 'CampoController.home',
+  '/Campos': 'CampoController.campos',
+
+  //Stock
+
+  'get /newStock' : {view: 'pages/newStock'},
+  'get /newStock' : 'StockController.viewCampos',
+  'post /newStock': 'StockController.nuevoStock',
+  'post /modificarStock/:id': 'StockController.modificarStock',
+  '/stock': 'StockController.home',
   /***************************************************************************
   *                                                                          *
   * More custom routes here...                                               *

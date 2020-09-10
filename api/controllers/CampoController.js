@@ -6,16 +6,16 @@
  */
 
 module.exports = {
-  home: async function (req, res) {
+  campos: async function (req, res) {
     let campos = await Campo.find({});
     res.view('pages/campos', {campos: campos});
 
   },
   nuevoCampo: async function (req, res){
-    let name = req.param('nombre');
+    let name = req.param('name');
     let cant = req.param('cantHas');
     let loc = req.param('localidad');
-    let prov = req.param('provincia');
+    let prov = req.param('prov');
 
     let campos = await Campo.create({
       nombre: name,
@@ -25,7 +25,7 @@ module.exports = {
       owner: req.session.user.id
     });
 
-    res.redirect('/newCampos');
+    res.redirect('/Campos');
   }
 };
 

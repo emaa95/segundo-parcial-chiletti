@@ -1,10 +1,34 @@
 body {
-  background-image: url("assets/images/green.svg");
-}
-#width4{
+  background-image: url("../images/fondo1.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-color: #001c20;
+  background-position-x: 900px;
+  background-position-y:150px;
+
 }
 
+#contorno{
+  border: double white;
+}
+#clima{
+  padding-left: 950px;
+  padding-top: 150px;
+}
+
+#imagenClima{
+  height: 160px;
+  width: 200px;
+}
+#topMap{
+  color: white;
+  padding-top: 100px;
+  padding-left: 50px;
+}
 #mapa{
+    float: left;
+    margin-top:0px;
+    padding-left: 50px;
 }
 
 .form-control{
@@ -17,4 +41,10 @@ body {
     margin: 100px;
 }
 
+.card-deck{
 
+}
+
+#campoLogin{
+  color: white;
+}

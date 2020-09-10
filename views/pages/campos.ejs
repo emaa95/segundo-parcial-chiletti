@@ -1,13 +1,17 @@
-<div class="card-deck">
-    <% for (let campo of campos) { %>
+<link rel="stylesheet" href="styles/presentacionCampos.css">
+<% for (let campo of campos) { %>
+<section id="info">
+    <div class="row">
+        <div class="card">
+            <h2><%-campo.nombre%></h2>
+            <p>Cantidad de hectáreas: <%-campo.cantHas%></p>
+            <p>Localidad: <%-campo.localidad%></p>
+            <p>Provincia: <%-campo.provincia%></p>
 
-    <div class="card bg-success">
-        <div class="card-body text-center">
-            <p class="card-text"><%-campo.nombre%></p>
-            <p class="card-text"><%-campo.cantHas%></p>
-            <p class="card-text"><%-campo.localidad%></p>
-            <p class="card-text"><%-campo.provincia%></p>
         </div>
     </div>
-</div>
+</section>
 <%}%>
+
+
+

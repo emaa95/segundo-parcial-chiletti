@@ -1,5 +1,5 @@
 /**
- * Campo.js
+ * Stock.js
  *
  * @description :: A model definition represents a database table/collection.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -12,10 +12,9 @@ module.exports = {
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-    nombre: { type: 'string', required: true, },
-    cantHas: { type: 'number'},
-    localidad: { type: 'string', required: true, },
-    provincia: { type: 'string', required: true, },
+    cantKilos: { type: 'number'},
+    tipoStock: { type: 'number', required: true, },
+    ubicacionGPS: { type: 'string', required: true, },
 
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
@@ -26,16 +25,10 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-    owner: {
-      model: 'usuario'
-    },
 
-    stock: {
-      collection: 'stock',
-      via: 'campo'
+    campo: {
+      model: 'campo'
     }
-
-
   },
 
 };

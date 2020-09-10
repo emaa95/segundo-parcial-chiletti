@@ -9,3 +9,9 @@ POST http://localhost:1337/Campo
 Content-Type: application/x-www-form-urlencoded
 
 Nombre=Campo Tcha&CantHas=200&Localidad=Tancacha&Provincia=Cordoba&owner=6
+
+###
+POST http://localhost:1337/Stock
+Content-Type: application/x-www-form-urlencoded
+
+cantKilos=200&tipoStock=1&ubicacionGPS=djksndskj&campo=1
