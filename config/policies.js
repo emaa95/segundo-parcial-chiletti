@@ -17,6 +17,15 @@ module.exports.policies = {
   *                                                                          *
   ***************************************************************************/
 
-  // '*': true,
+  '*': true,
+  CampoController: {
+    '*': 'isLoggedIn',
+  },
+  StockController: {
+    '*': 'isLoggedIn',
+  },
+  ActividadController:{
+    '*': 'isLoggedIn',
+  },
 
 };
