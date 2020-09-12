@@ -45,6 +45,18 @@ body {
 
 }
 
-#campoLogin{
+#campoLogin, #tituloTabla{
   color: white;
+}
+
+#tablaActividades{
+  width: 300px;
+  height: auto;
+  margin-top: 50px;
+  margin-right: 900px;
+}
+
+#filtro{
+  margin-top: 25px;
+  margin-bottom: 25px;
 }

@@ -7,11 +7,11 @@
 
 module.exports = {
   home: async function (req, res) {
-    let stocks = await  Stock.find({});
+    let stocks = await Stock.find({}).populate('campo');
     res.view('pages/stock', {stocks: stocks});
-    },
+  },
 
-  nuevoStock: async function (req, res){
+  nuevoStock: async function (req, res) {
     let cantidadKilos = req.param('cantKilos');
     let tipoStock = req.param('tipo');
     let gps = req.param('gps');
@@ -24,12 +24,16 @@ module.exports = {
       campo: campoID,
     });
 
-    res.redirect('/stock' );
+    res.redirect('/stock');
   },
+  stockForm: function (req, res) {
+    res.view('pages/newStock');
+  },
+
   viewCampos: async function (req, res) {
     let campos = await Campo.find({});
     res.view('pages/newStock', {campos: campos});
-  },
+  }
 
 };
 

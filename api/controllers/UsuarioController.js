@@ -16,7 +16,7 @@ module.exports = {
 
     if (found && await sails.argon2.verify(found.password, pass)) {
       req.session.user = found;
-      res.view('pages/login');
+      res.view('pages/homepage');
     } else {
       req.session.user = null;
       res.view('pages/login');

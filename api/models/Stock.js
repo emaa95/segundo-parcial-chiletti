@@ -13,7 +13,7 @@ module.exports = {
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
     cantKilos: { type: 'number'},
-    tipoStock: { type: 'number', required: true, },
+    tipoStock: { type: 'string', required: true, },
     ubicacionGPS: { type: 'string', required: true, },
 
 
@@ -28,6 +28,10 @@ module.exports = {
 
     campo: {
       model: 'campo'
+    },
+    actividad:{
+      collection: 'actividad',
+      via: 'stock'
     }
   },
 

@@ -24,19 +24,24 @@ module.exports.routes = {
   'get /login': { view: 'pages/login' },
   'post /login': 'UsuarioController.login',
    '/logout':    'UsuarioController.logout' ,
+
   //Campos
-  'get /newCampos': {view: 'pages/newCampos'},
+  'get /newCampos': 'CampoController.campoForm',
   'post /newCampos': 'CampoController.nuevoCampo' ,
   '/Campos': 'CampoController.campos',
 
   //Stock
 
-  'get /newStock' : {view: 'pages/newStock'},
-  'get /newStock' : 'StockController.viewCampos',
+  'get /newStock' : 'StockController.stockForm' && 'StockController.viewCampos' ,
   'post /newStock': 'StockController.nuevoStock',
-  'post /modificarStock/:id': 'StockController.modificarStock',
   '/stock': 'StockController.home',
-  /***************************************************************************
+
+  //Actividad
+  'get /newActividad/:id': 'StockControler.actividadForm',
+  'post /newActividad/:id': 'ActividadController.new',
+  '/actividad': 'ActividadController.home',
+
+   /***************************************************************************
   *                                                                          *
   * More custom routes here...                                               *
   * (See https://sailsjs.com/config/routes for examples.)                    *

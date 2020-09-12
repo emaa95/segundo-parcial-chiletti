@@ -26,6 +26,9 @@ module.exports = {
     });
 
     res.redirect('/Campos');
-  }
+  },
+  campoForm: function (req, res) {
+    res.view('pages/newCampos');
+  },
 };
 
