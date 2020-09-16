@@ -37,9 +37,9 @@ module.exports.routes = {
   '/stock': 'StockController.home',
 
   //Actividad
-  'get /newActividad/:id': 'StockControler.actividadForm',
+  'get /newActividad/:id': 'ActividadController.actividadForm',
   'post /newActividad/:id': 'ActividadController.new',
-  '/actividad': 'ActividadController.home',
+  'get /actividad/:id': 'ActividadController.home',
 
    /***************************************************************************
   *                                                                          *

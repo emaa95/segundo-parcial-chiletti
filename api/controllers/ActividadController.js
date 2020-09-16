@@ -7,27 +7,29 @@
 
 module.exports = {
   home: async function (req, res) {
-    let actividades = await  Actividad.find({stock: req.params.id});
+    let actividades = await  Actividad.find({stock: req.params.id}).populate('stock');
     res.view('pages/actividad', {actividades: actividades});
   },
 
   new: async function (req, res) {
+    let id = req.params.id;
     let kilos = req.param('cantKilos');
     let opcion = req.param('tipo');
     let subtotal = req.param('subtotal');
     let com = req.param('coment');
     let stock = req.params.id;
     let actividades = await Actividad.create({
+
       kilosUpdate: kilos,
       comentario: com,
       subtotal: subtotal,
       tipo: opcion,
       stock: stock,
     });
-    res.redirect('/actividad');
+    res.redirect('/actividad/' + id);
   },
   actividadForm: function (req, res) {
-    res.view('pages/newActividad');
+    res.view('pages/newActividad/');
   },
 };
 

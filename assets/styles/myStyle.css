@@ -60,3 +60,15 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+
+#imagenLogin{
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+#ingresar{
+  margin-right: 10px;
+}

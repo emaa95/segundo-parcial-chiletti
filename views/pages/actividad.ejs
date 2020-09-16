@@ -1,9 +1,10 @@
+<link href="" rel="stylesheet">
+<%#
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 
 
-<%#
 
 (function(){
     'use strict';
@@ -54,8 +55,7 @@ $(function(){
     });
     $('[data-toggle="tooltip"]').tooltip();
 })
- %>
-<div class="container-fluid" id="tablaActividades">
+
 <div class="panel-heading">
     <h3 class="panel-title" id="tituloTabla">Actividades</h3>
     <div class="pull-right" id="filtro">
@@ -67,36 +67,37 @@ $(function(){
 <div class="panel-body">
     <input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-table" placeholder="Escriba una palabra para filtrar" />
 </div>
-
-                <%for (let actividad of actividades) {%>
-                <table class="table table-hover" id="campoLogin">
-                    <thead>
-                    <tr>
-                        <th>kilos</th>
-                        <th>Tipo</th>
-                        <th>Subtotal</th>
-                        <th>Total</th>
-                        <th>Comentario</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><%-actividad.kilosUpdate%></td>
-                        <td><%-actividad.tipo%></td>
-                        <td><%-actividad.subtotal%></td>
-                        <td><% if(actividad.tipo === 'Egreso'){
-                                actividad.total = actividad.kilosUpdate - actividad.subtotal
-                            %>
-                                <%-actividad.total%>
-                            <% } else{
-                                actividad.total = actividad.kilosUpdate + actividad.subtotal
-                            %>
-                            <%-actividad.total%>
-                            <% } %>
-                        </td>
-                        <td><%-actividad.comentario%></td>
-                    </tr>
-                    </tbody>
-                </table>
-                <%}%>
-</div>
+%>
+<table class="table table-hover" id="tablaActividades">
+    <thead>
+    <tr>
+        <th scope="col">Tipo</th>
+        <th scope="col">kilos</th>
+        <th scope="col">Subtotal</th>
+        <th scope="col">Total</th>
+        <th scope="col" >Comentario</th>
+    </tr>
+    </thead>
+    <%for (let actividad of actividades) {%>
+    <table class="table table-hover" id="campoLogin">
+        <tbody>
+        <tr>
+            <td><%-actividad.tipo%></td>
+            <td><%-actividad.kilosUpdate%></td>
+            <td><%-actividad.subtotal%></td>
+            <td><% if(actividad.tipo === 'Egreso'){
+                    actividad.total = actividad.kilosUpdate - actividad.subtotal
+                %>
+                <%-actividad.total%>
+                <% } else{
+                    actividad.total = actividad.kilosUpdate + actividad.subtotal
+                %>
+                <%-actividad.total%>
+                <% } %>
+            </td>
+            <td><%-actividad.comentario%></td>
+        </tr>
+        </tbody>
+        <%}%>
+    </table>
+</table>
