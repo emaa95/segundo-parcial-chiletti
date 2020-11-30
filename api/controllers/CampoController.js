@@ -30,5 +30,13 @@ module.exports = {
   campoForm: function (req, res) {
     res.view('pages/newCampos');
   },
+
+  deleteCampo: async function (req, res) {
+    let deleteCampo = req.param('id');
+
+    await Campo.destroy({id: deleteCampo});
+
+    res.redirect('/Campos');
+  }
 };
 

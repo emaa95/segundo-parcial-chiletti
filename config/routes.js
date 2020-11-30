@@ -29,6 +29,7 @@ module.exports.routes = {
   'get /newCampos': 'CampoController.campoForm',
   'post /newCampos': 'CampoController.nuevoCampo' ,
   '/Campos': 'CampoController.campos',
+  '/deleteCampo/:id': 'CampoController.deleteCampo',
 
   //Stock
 

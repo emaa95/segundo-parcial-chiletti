@@ -73,3 +73,13 @@ body {
 #ingresar{
   margin-right: 10px;
 }
+
+#deleteCampo{
+  float: right;
+  margin-right: 21px;
+  margin-top: -44px;
+}
+
+.bi-x-circle{
+  color: red;
+}
