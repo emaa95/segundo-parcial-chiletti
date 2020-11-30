@@ -1,67 +1,15 @@
-.row {
-  width: 100%;
-  max-width: 45rem;
-  margin: 0 auto;
-  padding: 1.5rem;
-}
-
-.card {
+.card{
+  float: outside;
+  width: 300px;
+  height: 300px;
+  font-size: 20px;
   display: inline-block;
-  width: 45%;
-  padding: 4rem 1rem 7rem 1rem;
-  background-color: teal;
-  position: relative;
-  border:0px !important;
-}
-.card:after {
-  content: "";
-  display: block;
-  width: 0px;
-  height: 0px;
-  background-color: #006767;
-  top: 0px;
-  right: 0px;
-  border-bottom: 20px solid #006767;
-  border-left: 20px solid #006767;
-  border-right: 20px solid #001c20;
-  border-top: 20px solid #001c20;
-  position: absolute;
-  -webkit-filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
-  filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
-}
-.card:before {
-  content: "";
-  display: block;
-  width: 0px;
-  height: 0px;
-  border-top: 40px solid #006767;
-  border-right: 40px solid #006767;
-  border-left: 40px solid #001c20;
-  border-bottom: 40px solid #001c20;
-  bottom: 0px;
-  left: 0px;
-  position: absolute;
-  -webkit-filter: drop-shadow(7px -7px 5px rgba(0, 0, 0, 0.5));
-  filter: drop-shadow(7px -7px 5px rgba(0, 0, 0, 0.5));
-  margin-right: 10%;
-}
-.card:nth-of-type(1) {
-  margin-right: 9%;
-}
-.card h2 {
-  color: snow;
-  margin-bottom: 1rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.card p {
-  color: snow;
-  font-size: 1.1rem;
-  line-height: 140%;
+  margin-left: 100px;
+  margin-top: 20px;
 }
 
-.ftr{
-  text-align: center;
+.contenedor{
+  width: auto;
+  height: auto;
 }
 

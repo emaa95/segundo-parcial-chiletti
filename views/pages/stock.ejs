@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="styles/stock.css">
 <%for (let stock of stocks) {%>
 <div class="container">
     <div class="row">
@@ -28,7 +29,7 @@
                             </svg>
                             </a>
                         </td>
-                        <td><a href="/actividad/<%-stock.id%>"> Ver actividades</a></td>
+                        <td><a href="/actividad/<%-stock.id%>" id="verActividades"> Ver actividades</a></td>
                     </tr>
                     </tbody>
                 </table>

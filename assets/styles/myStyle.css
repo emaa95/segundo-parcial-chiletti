@@ -5,7 +5,8 @@ body {
   background-color: #001c20;
   background-position-x: 900px;
   background-position-y:150px;
-
+  font-family: Arial;
+  font-size: medium;
 }
 
 #contorno{

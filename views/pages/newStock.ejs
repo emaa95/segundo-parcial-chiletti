@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="styles/stock.css">
+
 <div id="form-login">
     <form method="post" action="/newStock">
         <div class="form-group">
@@ -6,7 +8,7 @@
             <small id="emailHelp" class="form-text text-muted">Ingrese la cantidad de kilos actual.</small>
         </div>
         <div class="form-group">
-            <label for="tipo">Tipo</label>
+            <label for="tipo" id="tipoForm">Tipo</label>
             <select name="tipo" id="tipo">
                 <option>Silo</option>
                 <option>Silo bolsa</option>
@@ -19,7 +21,7 @@
             <small id="emailHelp" class="form-text text-muted">Ingrese la ubicación GPS donde se encuentra.</small>
         </div>
         <div>
-        <label for="campoID"><b>Campo</b></label>
+        <label for="campoID" id="campoForm">Campo</label>
         <br>
         <select name="campoID" id="campoID">
             <% for (let campo of campos){ %>
@@ -27,6 +29,6 @@
             <% } %>
         </select>
         </div>
-        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="submit" class="btn btn-primary" id="guardar">Guardar</button>
     </form>
 </div>
